@@ -8,3 +8,47 @@ build/
 /x/
 local.properties
 /scrcpy-server
+--- .gitignore (原始)
+build/
+/dist/
+/build-*/
+/build_*/
+/release-*/
+.idea/
+.gradle/
+/x/
+local.properties
+/scrcpy-server
+
+
++++ .gitignore (修改后)
+```
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build artifacts
+build/
+dist/
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+```
