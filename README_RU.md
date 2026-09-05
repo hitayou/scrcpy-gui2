@@ -1,7 +1,3 @@
---- scrcpy_gui/README_RU.md (原始)
-
-
-+++ scrcpy_gui/README_RU.md (修改后)
 # Как использовать scrcpy-gui
 
 ## Установка
