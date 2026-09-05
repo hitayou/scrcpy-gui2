@@ -1,7 +1,3 @@
---- scrcpy_gui/scrcpy_gui.py (原始)
-
-
-+++ scrcpy_gui/scrcpy_gui.py (修改后)
 #!/usr/bin/env python3
 """
 scrcpy-gui - A modern GUI for scrcpy with Material Design 3 styling
@@ -21,7 +17,7 @@ from PySide6.QtWidgets import (
     QPushButton, QLabel, QComboBox, QGroupBox, QScrollArea,
     QFrame, QSplitter, QTextEdit, QStackedWidget, QRadioButton,
     QButtonGroup, QMessageBox, QDialog, QProgressBar, QSystemTrayIcon,
-    QMenu, QAction, QFileDialog, QSizePolicy
+    QMenu, QFileDialog, QSizePolicy
 )
 from PySide6.QtCore import (
     Qt, QThread, Signal, Slot, QTimer, QProcess, QSize, QPropertyAnimation,
@@ -1422,9 +1418,10 @@ class ScrcpyGUI(QMainWindow):
         self.port_input.setVisible(is_wifi)
         self.device_combo.setVisible(not is_wifi)
 
+        tutorial_type = 'usb' if conn_type == 0 else 'wifi'
         self.tutorial_btn.clicked.disconnect()
         self.tutorial_btn.clicked.connect(
-            lambda: self.show_tutorial_dialog(tutorial_type)
+            lambda t=tutorial_type: self.show_tutorial_dialog(t)
         )
 
     def show_tutorial_dialog(self, tutorial_type):
