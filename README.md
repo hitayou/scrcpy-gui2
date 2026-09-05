@@ -1,6 +1,5 @@
 > [!WARNING]
-> **This GitHub repo (<https://github.com/Genymobile/scrcpy>) is fork for the project. Do not download releases from random websites, even if
-their name contains `scrcpy`.**
+> **Official GitHub repo: https://github.com/Genymobile/scrcpy, scrcpy-gui2 it is fork**
 
 # scrcpy-gui
 
