@@ -1,3 +1,6 @@
+> [!WARNING]
+> **Официальный GitHub репозиторий: https://github.com/Genymobile/scrcpy, scrcpy-gui2 это форк**
+
 # Как использовать scrcpy-gui
 
 ## Установка
