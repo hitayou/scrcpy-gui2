@@ -1,38 +1,32 @@
-build/
-/dist/
-/build-*/
-/build_*/
-/release-*/
-.idea/
-.gradle/
-/x/
-local.properties
-/scrcpy-server
-__pycache__/
+```
+# Compiled and build artifacts
 *.pyc
-*.pyo
-*.pyd
+__pycache__/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.out
 
-# Build artifacts
-build/
-dist/
-
-# Logs
-*.log
-
-# Environment
+# Dependencies
+.venv/
+venv/
 .env
 .env.local
-*.env.*
+.env.*
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
 
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
-*.tmp
 
-# OS
-.DS_Store
-Thumbs.db
+# Build scripts output
+*.bat
+*.sh
 ```
